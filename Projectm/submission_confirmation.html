@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Confirmation - Project M</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .infinite-scroll-container {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 500%;
+            height: 50%; 
+            display: flex;
+            animation: scrollRight 50s linear infinite; 
+        }
+
+        .infinite-scroll {
+            width: calc(20% - 4px);
+            height: auto;
+            margin-right: 4px; 
+        }
+
+        @keyframes scrollRight {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .content {
+            z-index: 1;
+            text-align: center;
+            margin-top: -350px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for contacting us. We will get back to you shortly.</p>
+            <a href="landing.html" class="btn">Back to Home</a>
+
+            <p class="website-link">Visit our Social media work: <a href="https://www.instagram.com">Instagram</a></p>
+            <p class="website-link">Visit our banners and design work: <a href="https://www.facebook.com">Facebook</a></p>
+            <p class="website-link">Follow us for more updates: <a href="https://www.twitter.com">Twitter</a></p>
+        </div>
+        <div class="infinite-scroll-container">
+            <img class="infinite-scroll" src="image1.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image2.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image3.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image4.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image5.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image1.jpg" alt="Scrolling Image"> <!-- Repeat the images for seamless loop -->
+            <img class="infinite-scroll" src="image2.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image3.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image4.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image5.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image1.jpg" alt="Scrolling Image"> <!-- Repeat the images for seamless loop -->
+            <img class="infinite-scroll" src="image2.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image3.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image4.jpg" alt="Scrolling Image">
+            <img class="infinite-scroll" src="image5.jpg" alt="Scrolling Image">
+        </div>
+    </div>
+</body>
+</html>

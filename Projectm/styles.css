@@ -1,0 +1,77 @@
+/* Global Styles */
+@font-face {
+    font-family: 'Asus Rog';
+    src: url('D:\downloads\7032-fontps') format('truetype');
+}
+
+body {
+    font-family: 'Calibri';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+}
+.title-container{font-family: 'Asus Rog';}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* Services Section Styles */
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+/* Contact Section Styles */
+section#contact input,
+section#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Set input background color to white */
+    color: #000; /* Set input text color to black */
+}
+/* Center align the footer */
+footer {
+    text-align: center;
+}
+.btn:hover {
+    background-color: rgb(255, 8, 8);
+    color: black; /* Change text color on hover */
+}
+
+
+section#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+section#contact button:hover {
+    background-color: rgb(255, 8, 8);
+    color: black; /* Change text color on hover */
+}
