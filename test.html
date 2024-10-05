@@ -1,0 +1,139 @@
+Events on radio buttons/checkboxes
+<html>
+<head>
+<h2>Example for Event handling with radio buttons</h2>
+<script>
+function choice(cost)
+{
+	switch(cost)
+	{
+	case 50: alert("you have selected antivirus of cost 50$");
+		break;
+	case 100:alert("you have selected antivirus of cost 	100$");
+		break;
+	case 150:alert("you have selected antivirus of cost 	150$");
+		break;
+		default:alert("error---");
+		break;
+	}
+}
+</script>
+</head>
+<body>
+<h2>Buy Antivirus online.</h2>
+<hr/>
+<form>
+<p><input type="radio" name="a" onclick="choice(50)"/>
+<label>Antivirus version 1.2</label> <br />
+<input type="radio" name="a" onclick="choice(100)"/>
+<label>Antivirus version 1.4</label><br />
+<input type="radio" name="a" onclick="choice(150)"/>
+<label>
+Antivirus version 1.6</label>
+</p>
+<h2>Buy Antivirus online.</h2>
+<hr/>
+<form>
+<p><input type="checkbox" onclick="choice(50)"/>
+<label>Antivirus version 1.2</label> <br />
+<input type="checkbox" onclick="choice(100)"/>
+<label>Antivirus version 1.4</label><br />
+<input type="checkbox" onclick="choice(150)"/>
+<label>
+Antivirus version 1.6</label>
+</p>
+</form>
+</body>
+</html>
+Events on textboxes
+<html>
+<head>
+<h2>Example for Event handling with text boxes</h2>
+<script>
+function totalstr()
+{
+var boys=parseInt(document.getElementById("boys").value);
+var girls=parseInt(document.getElementById("girls").value);
+var absc=document.getElementById("absc").value;
+var res=boys+girls-absc;
+document.getElementById("tot").value = res; 
+}
+</script>
+</head>
+<body>
+<h2>Calcute strength</h2>
+<hr/>
+<form>
+<p>
+Girls strength
+<input type="text" id="girls" size="5" >
+</p>
+<p>
+Boys strength
+<input type="text" id="boys" size="5" >
+</p>
+<p>
+Absenties
+<input type="text" id="absc" size="5" >
+</p>
+<p>
+<input type="button" value="total" onclick="totalstr();">
+<input type="reset">
+<br/>
+TotalStrength:
+<input type="text" size="5" id="tot">
+</p>
+</form>
+</body>
+</html>
+Events on Password validations
+<html><head>
+<script>
+	function chkpwd(form)
+{
+if(form.first.value=="")
+{
+alert("you did not enter password \n" + "Pls Enter it");
+form.first.focus();
+return false;
+}
+ if(form.first.value!=form.second.value)
+{
+alert("passwords not match \n" + "Pls Re-Enter it");
+form.first.focus();
+return false;
+}
+else 
+{
+alert("You entered a valid password: " + form.first.value);
+return true;
+}
+}
+</script></head>
+<body>
+<h3>Please enter Password</h3>
+<form onsubmit="return chkpwd(this);">
+<p>
+<label>New password</label><input type="PASSWORD" name="first">
+</p>
+<p>
+<label>Re-enter password</label><input type="PASSWORD" name="second">
+</p>
+<br/>
+<input type="reset" name="reset"/>
+<input type="submit" name="submit"/>
+</form>
+</body>
+</html>
+Events on navigator object
+<html>
+<body onload="navP()">
+<h2>Example for navigator object to determine the browser & its version</h2>
+</body>
+<script>
+function navP()
+{
+	alert("The browser is"+ navigator.appName+"\n"+"The version is"+navigator.appVersion);
+}
+</script>
+</html>

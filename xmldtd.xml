@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE note [
+<!ELEMENT note (recipient, sender, subject, content)>
+<!ELEMENT recipient (#PCDATA)>
+<!ELEMENT sender (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+]>
+<note>
+    <recipient>Alice</recipient>
+    <sender>Bob</sender>
+    <subject>Meeting Agenda</subject>
+    <content>Please review the agenda for our upcoming meeting.</content>
+</note>

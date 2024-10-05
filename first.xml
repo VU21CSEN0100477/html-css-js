@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book>
+    <title>Introduction to XML</title>
+    <author>shiva</author>
+    <price>210</price>
+  </book>
+  <book>
+    <title>Web Dev</title>
+    <author>kishore</author>
+    <price>295</price>
+  </book>
+</bookstore>
